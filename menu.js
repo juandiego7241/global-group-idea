@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="container mx-auto px-6 flex justify-between items-center">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/LOGOFOOTER1.png" alt="Global Group Logo" class="h-16 w-auto object-contain">
+                    <img src="img/logo2.png" alt="Global Group Logo" class="h-16 w-auto object-contain">
                 </a>
             </div>
             
