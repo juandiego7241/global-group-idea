@@ -1,5 +1,9 @@
 /* Estilos personalizados mínimos (Tailwind maneja el resto) */
-html { scroll-behavior: smooth; }
+html { 
+    scroll-behavior: smooth; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 /* Scrollbar Personalizado */
 ::-webkit-scrollbar {
@@ -47,43 +51,4 @@ html { scroll-behavior: smooth; }
     33% { opacity: 1; transform: scale(1.1); }
     38% { opacity: 0; }
     100% { opacity: 0; }
-}
-
-/* --- ESTILOS HEADER DINÁMICO --- */
-
-/* Estado por defecto (Transparente en Home) */
-#navbar {
-    padding-top: 1.5rem; /* py-6 */
-    padding-bottom: 1.5rem; /* py-6 */
-}
-.nav-link {
-    @apply text-sm font-bold uppercase tracking-wider text-white hover:text-gg-gold transition-colors;
-}
-.nav-link-mobile {
-    @apply text-base font-bold uppercase tracking-wider text-gg-charcoal hover:text-gg-gold transition-colors block;
-}
-#navbar #mobile-menu-btn {
-    color: white;
-}
-
-/* Estado con Scroll (en Home) o por defecto (otras páginas) */
-#navbar.scrolled, #navbar.solid-nav {
-    @apply bg-white/90 backdrop-blur-md shadow-sm py-3;
-}
-
-#navbar.scrolled .nav-link, #navbar.solid-nav .nav-link {
-    @apply text-gg-charcoal;
-}
-
-#navbar.scrolled #mobile-menu-btn, #navbar.solid-nav #mobile-menu-btn {
-    @apply text-gg-charcoal;
-}
-
-/* Estado Activo del enlace */
-#navbar .nav-link.active {
-    color: #B8A74E; /* gg-gold */
-}
-
-#navbar.scrolled .nav-link.active, #navbar.solid-nav .nav-link.active {
-    color: #B8A74E; /* gg-gold */
 }

@@ -2,28 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const navElement = document.getElementById("navbar");
     const isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
 
-    const handleScroll = () => {
-        if (window.scrollY > 50) {
-            navElement.classList.add("scrolled");
-        } else {
-            navElement.classList.remove("scrolled");
-        }
-    };
-
-    // Aplicar lógica solo en la página de inicio
-    if (isHomePage) {
-        window.addEventListener("scroll", handleScroll);
-        handleScroll(); // Ejecutar al cargar para el estado inicial
-    } else {
-        // En las otras páginas, el menú es sólido desde el principio
-        navElement.classList.add("solid-nav");
-    }
-
     const menuHTML = `
         <div class="container mx-auto px-6 flex justify-between items-center">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/logo2.png" alt="Global Group Logo" class="h-16 w-auto object-contain">
+                    <img src="img/logo2.png" alt="Global Group Logo" class="h-14 w-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm">
                 </a>
             </div>
             
@@ -33,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="proyectos.html" class="nav-link">Proyectos</a>
                 <a href="soluciones.html" class="nav-link">Servicios</a>
                 <a href="tecnologias.html" class="nav-link">Tecnologías</a>
-                <a href="#contacto" class="px-8 py-3 bg-gg-charcoal text-white font-bold rounded-full text-xs uppercase tracking-widest hover:bg-gg-gold transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">Cotizar</a>
+                <a href="#contacto" class="px-8 py-2.5 bg-gg-charcoal text-white font-bold rounded-full text-xs uppercase tracking-widest hover:bg-gg-gold transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95">Cotizar</a>
             </div>
 
             <!-- Botón Móvil -->
@@ -60,6 +43,29 @@ document.addEventListener("DOMContentLoaded", () => {
     // Asegurar que el contenedor del menú sea relativo para posicionar el dropdown
     navElement.classList.add('relative');
 
+    // Elementos del menú (definidos después de inyectar el HTML)
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Lógica de Scroll y Fondo
+    const handleScroll = () => {
+        const isMenuOpen = mobileMenu && !mobileMenu.classList.contains('hidden');
+        // El menú es sólido si: hay scroll > 50, O el menú móvil está abierto
+        if (window.scrollY > 50 || isMenuOpen) {
+            navElement.classList.add("scrolled");
+        } else {
+            navElement.classList.remove("scrolled");
+        }
+    };
+
+    // Configuración Inicial de Estado
+    if (isHomePage) {
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); 
+    } else {
+        navElement.classList.add("solid-nav");
+    }
+
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
     const desktopLinks = document.querySelectorAll(".main-menu a");
     const mobileLinks = document.querySelectorAll("#mobile-menu a");
@@ -77,12 +83,19 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(mobileLinks);
 
     // Lógica para abrir/cerrar menú móvil
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
     if (mobileBtn && mobileMenu) {
         mobileBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            const icon = mobileBtn.querySelector('i');
+            
+            if (isHidden) {
+                icon.classList.replace('fa-xmark', 'fa-bars'); // Volver a hamburguesa
+            } else {
+                icon.classList.replace('fa-bars', 'fa-xmark'); // Cambiar a X
+            }
+            
+            // Actualizar el fondo del navbar (transparente/sólido)
+            if (isHomePage) handleScroll();
         });
     }
 });

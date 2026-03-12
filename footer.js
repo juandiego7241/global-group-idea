@@ -5,16 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const footerHTML = `
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between gap-12">
             <div class="md:w-1/3">
-                <img src="img/logo1.png" alt="Global Group" class="h-32 w-auto mb-6">
-                <p class="text-gray-500 text-sm leading-relaxed">Ingeniería Integral de Riesgos TQRE. Soluciones multidisciplinarias para un mundo industrial complejo.</p>
+                <img src="img/logo1.png" alt="Global Group" class="h-24 w-auto mb-6 hover:opacity-90 transition-opacity">
+                <p class="text-gray-400 text-sm leading-relaxed max-w-sm">Ingeniería Integral de Riesgos TQRE. Soluciones multidisciplinarias para un mundo industrial complejo.</p>
             </div>
             
             <div class="md:w-1/3">
                 <h4 class="text-gg-gold font-bold uppercase tracking-wider mb-6">Sede Central</h4>
-                <ul class="space-y-4 text-gray-400">
-                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-gg-gold"></i> Av. Tomás Marsano 1368, Miraflores</li>
-                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-gg-gold"></i> info@globalgroupsa.net</li>
-                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-gg-gold"></i> +(511) 446 4627</li>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3 hover:text-white transition-colors"><i class="fa-solid fa-location-dot mt-1 text-gg-gold"></i> Av. Tomás Marsano 1368, Miraflores</li>
+                    <li class="flex items-center gap-3 hover:text-white transition-colors"><i class="fa-solid fa-envelope text-gg-gold"></i> info@globalgroupsa.net</li>
+                    <li class="flex items-center gap-3 hover:text-white transition-colors"><i class="fa-solid fa-phone text-gg-gold"></i> +(511) 446 4627</li>
                 </ul>
             </div>
 
