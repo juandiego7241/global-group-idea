@@ -1,70 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
     const navElement = document.getElementById("navbar");
-    const isHomePage = window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
+
+    // DEFINITIVO: Barra fija, negra y visible siempre
+    navElement.className = "fixed w-full z-50 transition-all duration-300 bg-black/95 backdrop-blur-md shadow-lg py-4 border-b border-white/10";
 
     const menuHTML = `
         <div class="container mx-auto px-6 flex justify-between items-center">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/logo2.png" alt="Global Group Logo" class="h-14 w-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-sm">
+                    <img src="img/logo1.png" alt="Global Group Logo" class="h-16 w-auto object-contain hover:opacity-90 transition-opacity duration-300">
                 </a>
             </div>
             
             <!-- Menú Desktop -->
-            <div class="main-menu hidden md:flex items-center space-x-8">
-                <a href="index.html" class="nav-link">Home</a>                
-                <a href="proyectos.html" class="nav-link">Proyectos</a>
-                <a href="soluciones.html" class="nav-link">Servicios</a>
-                <a href="tecnologias.html" class="nav-link">Tecnologías</a>
-                <a href="#contacto" class="px-8 py-2.5 bg-gg-charcoal text-white font-bold rounded-full text-xs uppercase tracking-widest hover:bg-gg-gold transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:scale-95">Cotizar</a>
+            <div class="main-menu hidden md:flex items-center space-x-10">
+                <a href="index.html" class="nav-link font-medium uppercase tracking-wider text-white/70 hover:text-white transition-colors text-sm">Home</a>
+                <a href="proyectos.html" class="nav-link font-medium uppercase tracking-wider text-white/70 hover:text-white transition-colors text-sm">Proyectos</a>
+                <a href="soluciones.html" class="nav-link font-medium uppercase tracking-wider text-white/70 hover:text-white transition-colors text-sm">Servicios</a>
+                <a href="tecnologias.html" class="nav-link font-medium uppercase tracking-wider text-white/70 hover:text-white transition-colors text-sm">Tecnologías</a>
+                <a href="#footer" class="px-6 py-2 bg-gg-gold text-gg-charcoal font-bold rounded-full text-xs uppercase tracking-widest hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:scale-105">Contáctanos</a>
             </div>
 
             <!-- Botón Móvil -->
             <div class="md:hidden">
-                <button id="mobile-menu-btn" class="text-gg-charcoal focus:outline-none p-2">
+                <button id="mobile-menu-btn" class="text-white focus:outline-none p-2">
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
 
         <!-- Menú Móvil Desplegable -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-gray-100 absolute left-0 right-0 top-full shadow-xl">
+        <div id="mobile-menu" class="hidden md:hidden bg-black/95 backdrop-blur-md border-t border-gray-800 absolute left-0 right-0 top-full shadow-xl w-full">
             <div class="flex flex-col px-6 py-6 space-y-6">
-                <a href="index.html" class="nav-link-mobile">Home</a>
-                <a href="proyectos.html" class="nav-link-mobile">Proyectos</a>
-                <a href="soluciones.html" class="nav-link-mobile">Servicios</a>
-                <a href="tecnologias.html" class="nav-link-mobile">Tecnologías</a>
-                <a href="#contacto" class="px-8 py-3 bg-gg-charcoal text-white font-bold rounded-full text-xs uppercase tracking-widest hover:bg-gg-gold transition-all duration-300 shadow-lg text-center block">Cotizar</a>
+                <a href="index.html" class="nav-link text-base font-medium uppercase tracking-wider text-white/80 hover:text-white transition-colors block">Home</a>
+                <a href="proyectos.html" class="nav-link text-base font-medium uppercase tracking-wider text-white/80 hover:text-white transition-colors block">Proyectos</a>
+                <a href="soluciones.html" class="nav-link text-base font-medium uppercase tracking-wider text-white/80 hover:text-white transition-colors block">Servicios</a>
+                <a href="tecnologias.html" class="nav-link text-base font-medium uppercase tracking-wider text-white/80 hover:text-white transition-colors block">Tecnologías</a>
+                <a href="#footer" class="mt-4 px-8 py-3 bg-gg-gold text-gg-charcoal font-bold rounded-full text-xs uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-lg text-center block">Contáctanos</a>
             </div>
         </div>
     `;
 
     navElement.innerHTML = menuHTML;
-    // Asegurar que el contenedor del menú sea relativo para posicionar el dropdown
-    navElement.classList.add('relative');
-
-    // Elementos del menú (definidos después de inyectar el HTML)
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    // Lógica de Scroll y Fondo
-    const handleScroll = () => {
-        const isMenuOpen = mobileMenu && !mobileMenu.classList.contains('hidden');
-        // El menú es sólido si: hay scroll > 50, O el menú móvil está abierto
-        if (window.scrollY > 50 || isMenuOpen) {
-            navElement.classList.add("scrolled");
-        } else {
-            navElement.classList.remove("scrolled");
-        }
-    };
-
-    // Configuración Inicial de Estado
-    if (isHomePage) {
-        window.addEventListener("scroll", handleScroll);
-        handleScroll(); 
-    } else {
-        navElement.classList.add("solid-nav");
-    }
 
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
     const desktopLinks = document.querySelectorAll(".main-menu a");
@@ -83,6 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setActiveLink(mobileLinks);
 
     // Lógica para abrir/cerrar menú móvil
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
     if (mobileBtn && mobileMenu) {
         mobileBtn.addEventListener('click', () => {
             const isHidden = mobileMenu.classList.toggle('hidden');
@@ -93,9 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 icon.classList.replace('fa-bars', 'fa-xmark'); // Cambiar a X
             }
-            
-            // Actualizar el fondo del navbar (transparente/sólido)
-            if (isHomePage) handleScroll();
         });
     }
 });

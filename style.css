@@ -1,9 +1,5 @@
 /* Estilos personalizados mínimos (Tailwind maneja el resto) */
-html { 
-    scroll-behavior: smooth; 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+html { scroll-behavior: smooth; }
 
 /* Scrollbar Personalizado */
 ::-webkit-scrollbar {
@@ -51,4 +47,10 @@ html {
     33% { opacity: 1; transform: scale(1.1); }
     38% { opacity: 0; }
     100% { opacity: 0; }
+}
+
+/* Estilo para el enlace activo en el menú */
+.nav-link.active {
+    color: white;
+    font-weight: 700; /* Bold */
 }
