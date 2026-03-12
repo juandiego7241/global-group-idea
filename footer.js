@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const footerHTML = `
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between gap-12">
             <div class="md:w-1/3">
-                <img src="img/logofooter.png" alt="Global Group" class="h-32 w-auto mb-6">
+                <img src="img/LOGOFOOTER.png" alt="Global Group" class="h-32 w-auto mb-6">
                 <p class="text-gray-500 text-sm leading-relaxed">Ingeniería Integral de Riesgos TQRE. Soluciones multidisciplinarias para un mundo industrial complejo.</p>
             </div>
             
