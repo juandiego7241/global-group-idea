@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Group | Elite Engineering</title>
+    <link rel="icon" type="image/png" href="https://ui-avatars.com/api/?name=G&background=B8A74E&color=fff&size=64">
+    
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- LIBRERÍAS EXTERNAS (Tailwind + AOS + FontAwesome) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CONFIGURACIÓN TAILWIND (Colores de Marca) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gg-charcoal': '#2D3132',
+                        'gg-gold': '#B8A74E',
+                        'gg-light': '#F5F5F7',
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-montserrat text-gg-charcoal antialiased bg-white selection:bg-gg-gold selection:text-white overflow-x-hidden">
+
+    <!-- NAV (Inyectado por JS) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300"></nav>
+
+    <!-- HERO SECTION: SLIDER INMERSIVO -->
+    <header class="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-gg-charcoal">
+        
+        <!-- Background Slider -->
+        <div class="absolute inset-0 z-0">
+            <!-- Imagen 1 -->
+            <div class="hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070'); animation-delay: 0s;"></div>
+            <!-- Imagen 2 -->
+            <div class="hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?q=80&w=2070'); animation-delay: 5s;"></div>
+            <!-- Imagen 3 -->
+            <div class="hero-bg-image" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070'); animation-delay: 10s;"></div>
+            
+            <!-- Overlay Oscuro para Legibilidad -->
+            <div class="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
+        </div>
+
+        <!-- Contenido Hero -->
+        <div class="relative z-10 container mx-auto px-6 text-center mt-16">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <span class="text-gg-gold font-bold tracking-[0.3em] uppercase text-xs md:text-sm mb-6 block">Ingeniería de Riesgos TQRE</span>
+                <h1 class="text-5xl md:text-8xl font-black text-white leading-[1.1] mb-8 tracking-tight">
+                    PRECISIÓN <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-gg-gold to-yellow-200">INDUSTRIAL</span>
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+                    Ingeniería de alto nivel para blindar activos críticos. Gestión de riesgos, monitoreo ambiental y soluciones offshore.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="#footer" class="px-10 py-4 bg-gg-gold text-white font-bold rounded-full shadow-lg shadow-gg-gold/30 hover:bg-white hover:text-gg-charcoal hover:-translate-y-1 transition-all duration-300 uppercase tracking-widest text-sm relative z-20">
+                        Cotizar Ahora
+                    </a>
+                    <a href="proyectos.html" class="px-10 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-gg-charcoal hover:border-white transition-all duration-300 uppercase tracking-widest text-sm relative z-20">
+                        Ver Portafolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="nosotros" class="py-32 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
+                <span class="text-gg-gold font-bold uppercase tracking-widest text-sm mb-4 block">Sobre Nosotros</span>
+                <h2 class="text-4xl md:text-6xl font-black mb-8 leading-[1.1] text-gg-charcoal">
+                    INGENIERÍA TQRE <br>DE CLASE MUNDIAL
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    <strong class="text-gg-charcoal">Global Group</strong> es una organización dedicada a brindar soluciones de ingeniería y consultoría en las diferentes etapas de producción de su negocio <strong>TQRE</strong> (Ingeniería de Calidad y Riesgo Total).
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Abarcamos análisis de procesos de puesta en marcha, proyectos offshore, adquisiciones, mantenimiento, ingeniería básica, detalles, integración, y aseguramiento de la calidad QA/QC.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Nuestro grupo de trabajo multidisciplinario incluye ingenieros de proyectos, biólogos, hidrogeólogos, geógrafos, geólogos y consultores ambientales con reconocida experiencia en entornos locales e internacionales.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-8 border-l-4 border-gg-gold pl-4 italic">
+                    Contamos con los principales representantes exclusivos del mundo (estado del arte) y el compromiso total para la satisfacción del cliente.
+                </p>
+            </div>
+            <div class="md:w-1/2 relative" data-aos="zoom-in" data-aos-delay="300">
+                <div class="absolute inset-0 bg-gg-gold/10 transform translate-x-6 translate-y-6 rounded-3xl hidden md:block"></div>
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070" class="relative rounded-3xl shadow-2xl object-cover h-[600px] w-full" alt="Equipo Global Group">
+            </div>
+        </div>
+    </section>
+
+    <!-- CIFRAS (STATS) -->
+    <section id="cifras" class="py-20 bg-gg-charcoal text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center relative z-10">
+            <div class="p-4" data-aos="fade-up">
+                <span class="block text-5xl md:text-6xl font-black text-gg-gold metric-number mb-2" data-target="20">0</span>
+                <span class="text-sm uppercase tracking-widest text-gray-400">Años de Experiencia</span>
+            </div>
+            <div class="p-4" data-aos="fade-up" data-aos-delay="100">
+                <span class="block text-5xl md:text-6xl font-black text-gg-gold metric-number mb-2" data-target="20">0</span>
+                <span class="text-sm uppercase tracking-widest text-gray-400">Colaboradores</span>
+            </div>
+            <div class="p-4" data-aos="fade-up" data-aos-delay="200">
+                <span class="block text-5xl md:text-6xl font-black text-gg-gold metric-number mb-2" data-target="20">+0</span>
+                <span class="text-sm uppercase tracking-widest text-gray-400">Proyectos Realizados</span>
+            </div>
+            <div class="p-4" data-aos="fade-up" data-aos-delay="300">
+                <span class="block text-5xl md:text-6xl font-black text-gg-gold metric-number mb-2" data-target="100">0%</span>
+                <span class="text-sm uppercase tracking-widest text-gray-400">Clientes Satisfechos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISIÓN Y VISIÓN -->
+    <section class="py-32 bg-gg-light">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Misión -->
+            <div class="bg-white p-12 rounded-3xl shadow-lg border-l-8 border-gg-gold" data-aos="fade-up">
+                <div class="flex items-center mb-6">
+                    <i class="fa-solid fa-bullseye text-3xl text-gg-gold mr-4"></i>
+                    <h3 class="text-2xl font-black text-gg-charcoal uppercase">Misión</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    Brindar soluciones sostenibles que superen las expectativas de nuestros clientes, mediante la aplicación de tecnología y el desarrollo de proyectos integrales de ingeniería de riesgos, cumpliendo los estándares nacionales e internacionales.
+                </p>
+            </div>
+
+            <!-- Visión -->
+            <div class="bg-white p-12 rounded-3xl shadow-lg border-l-8 border-gg-charcoal" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center mb-6">
+                    <i class="fa-solid fa-eye text-3xl text-gg-charcoal mr-4"></i>
+                    <h3 class="text-2xl font-black text-gg-charcoal uppercase">Visión</h3>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    Ser una empresa líder en el mercado, reconocida por la excelencia técnica, la innovación y el compromiso con la seguridad en cada proyecto ejecutado.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿QUÉ HACEMOS? (Cards) -->
+    <section class="py-32 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl md:text-6xl font-black mb-4 text-gg-charcoal">¿QUÉ HACEMOS?</h2>
+                <div class="w-24 h-1 bg-gg-gold mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-500 text-lg">
+                    Orquestamos el ciclo completo de la ingeniería TQRE. Desde el diseño conceptual hasta la mitigación de riesgos operativos, asegurando la continuidad de su negocio.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Proyectos -->
+                <div class="group bg-gray-50 p-12 rounded-[40px] hover:bg-gg-charcoal hover:text-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer" data-aos="fade-up">
+                    <i class="fa-solid fa-helmet-safety text-5xl text-gg-gold mb-8 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-2xl font-bold mb-4">Proyectos</h3>
+                    <p class="mb-6 opacity-80">Proyectos de Global Group realizados a nivel nacional.</p>
+                    <a href="proyectos.html" class="inline-block text-xs font-bold uppercase tracking-widest border-b-2 border-gg-gold pb-2 group-hover:text-gg-gold transition-colors">Ver portafolio</a>
+                </div>
+
+                <!-- Servicios -->
+                <div class="group bg-gray-50 p-12 rounded-[40px] hover:bg-gg-charcoal hover:text-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-gears text-5xl text-gg-gold mb-8 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-2xl font-bold mb-4">Servicios</h3>
+                    <p class="mb-6 opacity-80">Proyectos de Global Group realizados a nivel nacional.</p>
+                    <a href="soluciones.html" class="inline-block text-xs font-bold uppercase tracking-widest border-b-2 border-gg-gold pb-2 group-hover:text-gg-gold transition-colors">Ver soluciones</a>
+                </div>
+
+                <!-- Tecnologías -->
+                <div class="group bg-gray-50 p-12 rounded-[40px] hover:bg-gg-charcoal hover:text-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-microchip text-5xl text-gg-gold mb-8 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-2xl font-bold mb-4">Tecnologías</h3>
+                    <p class="mb-6 opacity-80">Proyectos de Global Group realizados a nivel nacional.</p>
+                    <a href="tecnologias.html" class="inline-block text-xs font-bold uppercase tracking-widest border-b-2 border-gg-gold pb-2 group-hover:text-gg-gold transition-colors">Ver catálogo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTROS CLIENTES (Dinámico) -->
+    <section class="py-16 bg-gray-50 border-t border-gray-100 overflow-hidden">
+        <div class="container mx-auto px-6 mb-10 text-center">
+            <h2 class="text-2xl font-bold text-gray-400 uppercase tracking-widest">Nuestros Clientes</h2>
+        </div>
+        
+        <!-- Marquee Infinito -->
+        <div class="relative w-full overflow-hidden marquee-fade">
+            <div class="flex animate-scroll space-x-24 items-center">
+                <!-- Set 1 -->
+                <i class="fa-brands fa-aws text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-google text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-microsoft text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-airbnb text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-uber text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-stripe text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <!-- Set 2 (Repetición) -->
+                <i class="fa-brands fa-aws text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-google text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-microsoft text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-airbnb text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-uber text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-stripe text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <!-- Set 3 (Repetición para pantallas anchas) -->
+                <i class="fa-brands fa-aws text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-google text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-microsoft text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-airbnb text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-uber text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-stripe text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <!-- Set 4 (Seguridad adicional) -->
+                <i class="fa-brands fa-aws text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-google text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-microsoft text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-airbnb text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-uber text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+                <i class="fa-brands fa-stripe text-6xl text-gray-300 hover:text-gg-charcoal transition-colors cursor-pointer"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Inyectado por JS) -->
+    <footer id="footer"></footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

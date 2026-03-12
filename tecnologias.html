@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías | Global Group</title>
+    <link rel="icon" type="image/png" href="https://ui-avatars.com/api/?name=G&background=B8A74E&color=fff&size=64">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'gg-charcoal': '#2D3132', 'gg-gold': '#B8A74E', 'gg-light': '#F5F5F7' },
+                    fontFamily: { montserrat: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-montserrat text-gg-charcoal bg-white antialiased">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300"></nav>
+
+    <header class="relative h-[50vh] bg-gg-charcoal flex items-center justify-center text-center px-6">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070')] bg-cover bg-center"></div>
+        <div class="relative z-20" data-aos="zoom-in">
+            <span class="text-gg-gold font-bold tracking-widest uppercase text-sm mb-4 block">Catálogo Especializado</span>
+            <h1 class="text-4xl md:text-6xl font-black text-white mb-4">NUESTRA TECNOLOGÍA</h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">Equipamiento de última generación para Higiene Industrial y Salud Ocupacional.</p>
+        </div>
+    </header>
+
+    <!-- HIGIENE OCUPACIONAL -->
+    <section class="py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <i class="fa-solid fa-ear-listen text-5xl text-gg-gold mb-6"></i>
+                <h2 class="text-3xl md:text-5xl font-black text-gg-charcoal mb-4">HIGIENE OCUPACIONAL</h2>
+                <div class="w-24 h-1 bg-gg-gold mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Instrumentación certificada para la medición precisa de agentes físicos y protección auditiva.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Sonómetros -->
+                <div class="group bg-gg-light rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-right">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Sonómetros">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gg-charcoal mb-3">Sonómetros Integradores</h3>
+                        <p class="text-gray-600 mb-6">Equipos clase 1 y 2 para medición de ruido ambiental y laboral. Cumplimiento con normativa nacional.</p>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Análisis de frecuencias</li>
+                            <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Datalogger integrado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dosímetros -->
+                <div class="group bg-gg-light rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-left">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Dosímetros">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gg-charcoal mb-3">Dosímetros de Ruido</h3>
+                        <p class="text-gray-600 mb-6">Dispositivos personales compactos para la medición de la dosis de ruido acumulada durante la jornada laboral.</p>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Diseño ergonómico</li>
+                            <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Software de gestión</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÁREA DE SALUD -->
+    <section class="py-32 bg-gg-charcoal text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <i class="fa-solid fa-heart-pulse text-5xl text-gg-gold mb-6"></i>
+                <h2 class="text-3xl md:text-5xl font-black text-white mb-4">ÁREA DE SALUD</h2>
+                <div class="w-24 h-1 bg-gg-gold mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-300 max-w-2xl mx-auto">Soluciones de oxigenoterapia y equipamiento médico para emergencias y cuidados críticos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Balones de Oxígeno -->
+                <div class="group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex flex-col md:flex-row h-full">
+                        <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006" class="absolute inset-0 w-full h-full object-cover" alt="Balones de Oxígeno">
+                        </div>
+                        <div class="md:w-3/5 p-8 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-gg-gold mb-3">Balones de Oxígeno</h3>
+                            <p class="text-gray-400 text-sm mb-4">Cilindros de alta presión certificados para uso médico e industrial. Disponibles en diversas capacidades.</p>
+                            <span class="inline-block px-3 py-1 bg-gg-gold/20 text-gg-gold text-xs font-bold rounded-full w-fit">Stock Disponible</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concentradores -->
+                <div class="group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex flex-col md:flex-row h-full">
+                        <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030" class="absolute inset-0 w-full h-full object-cover" alt="Concentradores">
+                        </div>
+                        <div class="md:w-3/5 p-8 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-gg-gold mb-3">Concentradores</h3>
+                            <p class="text-gray-400 text-sm mb-4">Equipos estacionarios y portátiles para suministro continuo de oxígeno. Operación silenciosa y eficiente.</p>
+                            <span class="inline-block px-3 py-1 bg-gg-gold/20 text-gg-gold text-xs font-bold rounded-full w-fit">Última Generación</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

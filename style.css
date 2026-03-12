@@ -1,0 +1,89 @@
+/* Estilos personalizados mínimos (Tailwind maneja el resto) */
+html { scroll-behavior: smooth; }
+
+/* Scrollbar Personalizado */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #B8A74E;
+    border-radius: 4px;
+}
+
+/* Animación Carrusel de Clientes */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+    animation: scroll 30s linear infinite;
+    width: max-content;
+}
+
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
+
+/* Máscara para suavizar bordes del carrusel */
+.marquee-fade {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Animación Hero Slider (Fade & Zoom) */
+.hero-bg-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: heroFade 15s infinite;
+}
+
+@keyframes heroFade {
+    0% { opacity: 0; transform: scale(1); }
+    5% { opacity: 1; }
+    33% { opacity: 1; transform: scale(1.1); }
+    38% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* --- ESTILOS HEADER DINÁMICO --- */
+
+/* Estado por defecto (Transparente en Home) */
+#navbar {
+    padding-top: 1.5rem; /* py-6 */
+    padding-bottom: 1.5rem; /* py-6 */
+}
+.nav-link {
+    @apply text-sm font-bold uppercase tracking-wider text-white hover:text-gg-gold transition-colors;
+}
+.nav-link-mobile {
+    @apply text-base font-bold uppercase tracking-wider text-gg-charcoal hover:text-gg-gold transition-colors block;
+}
+#navbar #mobile-menu-btn {
+    color: white;
+}
+
+/* Estado con Scroll (en Home) o por defecto (otras páginas) */
+#navbar.scrolled, #navbar.solid-nav {
+    @apply bg-white/90 backdrop-blur-md shadow-sm py-3;
+}
+
+#navbar.scrolled .nav-link, #navbar.solid-nav .nav-link {
+    @apply text-gg-charcoal;
+}
+
+#navbar.scrolled #mobile-menu-btn, #navbar.solid-nav #mobile-menu-btn {
+    @apply text-gg-charcoal;
+}
+
+/* Estado Activo del enlace */
+#navbar .nav-link.active {
+    color: #B8A74E; /* gg-gold */
+}
+
+#navbar.scrolled .nav-link.active, #navbar.solid-nav .nav-link.active {
+    color: #B8A74E; /* gg-gold */
+}
