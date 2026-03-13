@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Global Group</title>
+    <link rel="icon" type="image/png" href="https://ui-avatars.com/api/?name=G&background=B8A74E&color=fff&size=64">
+    
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- LIBRERÍAS EXTERNAS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CONFIGURACIÓN TAILWIND -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'gg-charcoal': '#2D3132', 'gg-gold': '#B8A74E', 'gg-light': '#F5F5F7' },
+                    fontFamily: { montserrat: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <!-- LIBRERÍA EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          // INICIALIZACIÓN: Reemplaza con tu Public Key de EmailJS
+          // Se encuentra en: Account > API Keys > Public Key
+          emailjs.init("04_QQo7w6rHUOseVP");
+       })();
+    </script>
+</head>
+<body class="font-montserrat text-gg-charcoal bg-white antialiased">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300"></nav>
+
+    <!-- HEADER -->
+    <header class="relative h-[40vh] bg-gg-charcoal flex items-center justify-center text-center px-6">
+        <div class="absolute inset-0 opacity-20 bg-[url('img/imagen3.jpg')] bg-cover bg-center"></div>
+        <div class="relative z-10" data-aos="fade-up">
+            <span class="text-gg-gold font-bold tracking-widest uppercase text-sm mb-4 block">Estamos para ayudarte</span>
+            <h1 class="text-4xl md:text-6xl font-black text-white mb-4">HABLEMOS</h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto">Solicita una cotización o asesoría técnica con nuestros ingenieros.</p>
+        </div>
+    </header>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="py-24 bg-gg-light relative">
+        <div class="container mx-auto px-6">
+            <!-- PANEL UNIFICADO "A OTRO NIVEL" -->
+            <div class="max-w-6xl mx-auto bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row" data-aos="fade-up">
+                
+                <!-- COLUMNA IZQUIERDA: EXPERIENCIA DE MARCA (OSCURO) -->
+                <div class="lg:w-2/5 bg-gg-charcoal text-white p-10 md:p-14 relative flex flex-col justify-between">
+                    <!-- Decoración de fondo -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-gg-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-black mb-6">Información de Contacto</h3>
+                        <p class="text-gray-300 mb-10 leading-relaxed">Estamos listos para atender requerimientos de alta complejidad técnica. Contáctanos hoy mismo.</p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-5 group">
+                                <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-gg-gold shrink-0 group-hover:bg-gg-gold group-hover:text-white transition-all duration-300">
+                                    <i class="fa-solid fa-location-dot text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Sede Central</h4>
+                                    <p class="text-sm text-gray-400 group-hover:text-white transition-colors">Av. Tomás Marsano 1368<br>Miraflores, Lima - Perú</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 group">
+                                <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-gg-gold shrink-0 group-hover:bg-gg-gold group-hover:text-white transition-all duration-300">
+                                    <i class="fa-solid fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Correo Electrónico</h4>
+                                    <p class="text-sm text-gray-400 group-hover:text-white transition-colors">info@globalgroupsa.net<br>ventas@globalgroupsa.net</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 group">
+                                <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-gg-gold shrink-0 group-hover:bg-gg-gold group-hover:text-white transition-all duration-300">
+                                    <i class="fa-solid fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white mb-1">Teléfonos</h4>
+                                    <p class="text-sm text-gray-400 group-hover:text-white transition-colors">Oficina: +(511) 446 4627<br>Urgencias: +(51) 995 716 810</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div class="mt-12">
+                            <h4 class="text-xs font-bold text-gg-gold uppercase tracking-widest mb-4">Síguenos en</h4>
+                            <div class="flex gap-4">
+                                <a href="#" class="w-10 h-10 bg-white/5 hover:bg-gg-gold flex items-center justify-center rounded-full text-white transition-all duration-300 transform hover:-translate-y-1"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="w-10 h-10 bg-white/5 hover:bg-gg-gold flex items-center justify-center rounded-full text-white transition-all duration-300 transform hover:-translate-y-1"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa Integrado (Estilo Tarjeta dentro del panel oscuro) -->
+                    <div class="mt-12 rounded-2xl overflow-hidden border border-white/10 shadow-lg relative h-48 group">
+                        <div class="absolute inset-0 z-10 pointer-events-none border-[6px] border-gg-charcoal/50 rounded-2xl"></div>
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.155999081291!2d-77.02255562588377!3d-12.101138991429902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f5d3e5e5a9%3A0x4d5f3a3a5f3e5e5a!2sAv.%20Tom%C3%A1s%20Marsano%201368%2C%20Miraflores%2015047%2C%20Per%C3%BA!5e0!3m2!1ses!2ses!4v1684854321098!5m2!1ses!2ses" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                class="grayscale invert hover:grayscale-0 hover:invert-0 transition-all duration-700 opacity-80 hover:opacity-100"></iframe>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DERECHA: FORMULARIO (CLARO) -->
+                <div class="lg:w-3/5 bg-white p-10 md:p-14">
+                    <form id="contactForm" class="space-y-6 transition-opacity duration-500">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Nombre Completo</label>
+                                <input type="text" name="user_name" required class="w-full bg-gg-light border-0 rounded-xl px-5 py-4 text-gg-charcoal placeholder-gray-400 focus:ring-2 focus:ring-gg-gold focus:bg-white transition-all" placeholder="Ej. Juan Pérez">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Empresa</label>
+                                <input type="text" name="user_company" class="w-full bg-gg-light border-0 rounded-xl px-5 py-4 text-gg-charcoal placeholder-gray-400 focus:ring-2 focus:ring-gg-gold focus:bg-white transition-all" placeholder="Ej. Minera SAC">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Correo Electrónico</label>
+                                <input type="email" name="user_email" required class="w-full bg-gg-light border-0 rounded-xl px-5 py-4 text-gg-charcoal placeholder-gray-400 focus:ring-2 focus:ring-gg-gold focus:bg-white transition-all" placeholder="correo@empresa.com">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Teléfono</label>
+                                <input type="tel" name="user_phone" required class="w-full bg-gg-light border-0 rounded-xl px-5 py-4 text-gg-charcoal placeholder-gray-400 focus:ring-2 focus:ring-gg-gold focus:bg-white transition-all" placeholder="+51 999 999 999">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Asunto</label>
+                            <select name="subject" class="w-full bg-gg-light border-0 rounded-xl px-5 py-4 text-gg-charcoal focus:ring-2 focus:ring-gg-gold focus:bg-white transition-all">
+                                <option>Cotización de Equipos</option>
+                                <option>Servicios de Ingeniería</option>
+                                <option>Consultoría Ambiental</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-gray-500">Mensaje</label>
+                            <textarea name="message" required rows="4" class="w-full bg-gg-light border-0 rounded-xl px-5 py-4 text-gg-charcoal placeholder-gray-400 focus:ring-2 focus:ring-gg-gold focus:bg-white transition-all" placeholder="Detalles de su requerimiento..."></textarea>
+                        </div>
+
+                        <div class="pt-4">
+                            <button type="submit" id="submitBtn" class="w-full bg-gg-gold text-white font-bold py-5 rounded-xl hover:bg-gg-charcoal transition-all duration-300 shadow-xl shadow-gg-gold/20 hover:shadow-2xl uppercase tracking-widest text-sm transform hover:-translate-y-1 flex justify-center items-center gap-2">
+                                <span>Enviar Mensaje</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- MENSAJE DE ÉXITO (Oculto por defecto) -->
+                    <div id="successMessage" class="hidden h-full flex-col justify-center items-center text-center py-10 animate-fade-in">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-500">
+                            <i class="fa-solid fa-check text-4xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-black text-gg-charcoal mb-4">¡Mensaje Enviado!</h3>
+                        <p class="text-gray-500 text-lg max-w-md mx-auto mb-8">Gracias por contactar a Global Group. Un ingeniero especialista revisará su requerimiento y le responderá a la brevedad.</p>
+                        <button onclick="resetForm()" class="px-8 py-3 border-2 border-gg-charcoal text-gg-charcoal font-bold rounded-full hover:bg-gg-charcoal hover:text-white transition-all uppercase text-xs tracking-widest">
+                            Enviar otro mensaje
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="menu.js"></script>
+    <script src="footer.js"></script>
+    <script src="main.js"></script>
+
+    <!-- LÓGICA DEL FORMULARIO -->
+    <script>
+        const form = document.getElementById('contactForm');
+        const btn = document.getElementById('submitBtn');
+        const successMsg = document.getElementById('successMessage');
+        const originalBtnContent = btn.innerHTML;
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Evita recarga real
+
+            // 1. Estado de carga
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin text-lg"></i> Enviando...';
+            btn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            // 2. Enviar email real con EmailJS
+            // Reemplaza estos IDs con los que creaste en el panel de EmailJS
+            const serviceID = 'service_82qfgsj'; // Tu Service ID (ej: service_gmail)
+            const templateID = 'template_jpmg7r6'; // Tu Template ID
+
+            emailjs.sendForm(serviceID, templateID, form)
+                .then(() => {
+                    // ÉXITO
+                    form.classList.add('hidden');
+                    successMsg.classList.remove('hidden');
+                    successMsg.classList.add('flex');
+                }, (err) => {
+                    // ERROR
+                    btn.disabled = false;
+                    btn.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Error al enviar';
+                    alert('Ocurrió un error al enviar el mensaje. Por favor intenta nuevamente o escríbenos a info@globalgroupsa.net');
+                    console.log('FAILED...', err);
+                    
+                    // Restaurar botón después de 3 segundos
+                    setTimeout(() => {
+                        btn.innerHTML = originalBtnContent;
+                        btn.classList.remove('opacity-75', 'cursor-not-allowed');
+                    }, 3000);
+                });
+        });
+
+        function resetForm() {
+            // Resetear visualmente
+            successMsg.classList.add('hidden');
+            successMsg.classList.remove('flex');
+            form.classList.remove('hidden');
+            
+            // Resetear inputs y botón
+            form.reset();
+            btn.disabled = false;
+            btn.innerHTML = originalBtnContent;
+            btn.classList.remove('opacity-75', 'cursor-not-allowed');
+        }
+    </script>
+</body>
+</html>

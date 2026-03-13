@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="proyectos.html" class="nav-link font-medium uppercase tracking-wider text-white/70 hover:text-white transition-colors text-sm">Proyectos</a>
                 <a href="soluciones.html" class="nav-link font-medium uppercase tracking-wider text-white/70 hover:text-white transition-colors text-sm">Servicios</a>
                 <a href="tecnologias.html" class="nav-link font-medium uppercase tracking-wider text-white/70 hover:text-white transition-colors text-sm">Tecnologías</a>
-                <a href="#footer" class="px-6 py-2 bg-gg-gold text-gg-charcoal font-bold rounded-full text-xs uppercase tracking-widest hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:scale-105">Contáctanos</a>
+                <a href="contacto.html" class="px-6 py-2 bg-gg-gold text-gg-charcoal font-bold rounded-full text-xs uppercase tracking-widest hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:scale-105">Contáctanos</a>
             </div>
 
             <!-- Botón Móvil -->
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="proyectos.html" class="nav-link text-base font-medium uppercase tracking-wider text-white/80 hover:text-white transition-colors block">Proyectos</a>
                 <a href="soluciones.html" class="nav-link text-base font-medium uppercase tracking-wider text-white/80 hover:text-white transition-colors block">Servicios</a>
                 <a href="tecnologias.html" class="nav-link text-base font-medium uppercase tracking-wider text-white/80 hover:text-white transition-colors block">Tecnologías</a>
-                <a href="#footer" class="mt-4 px-8 py-3 bg-gg-gold text-gg-charcoal font-bold rounded-full text-xs uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-lg text-center block">Contáctanos</a>
+                <a href="contacto.html" class="mt-4 px-8 py-3 bg-gg-gold text-gg-charcoal font-bold rounded-full text-xs uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-lg text-center block">Contáctanos</a>
             </div>
         </div>
     `;
