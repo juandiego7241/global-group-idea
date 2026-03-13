@@ -50,14 +50,27 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <!-- Sonómetros -->
-                <div class="group bg-gg-light rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-right">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Sonómetros">
-                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 hover:border-gg-gold/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer" 
+                     data-aos="fade-right"
+                     onclick="openModal(this)"
+                     data-title="Sonómetros Integradores"
+                     data-category="Higiene Ocupacional"
+                     data-image="img/imagen18.jpg"
+                     data-desc="Sonómetro clase 1 para mediciones acústicas de precisión en el área de trabajo, evaluación de impacto ambiental y cumplimiento normativo.">
+                    
+                    <!-- Imagen optimizada para producto completo -->
+                    <div class="h-80 overflow-hidden relative bg-gray-50 p-8 flex items-center justify-center border-b border-gray-100">
+                        <span class="absolute top-6 left-6 bg-gg-charcoal text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-full z-10">Clase 1</span>
+                        <img src="img/imagen18.jpg" class="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-lg" alt="Sonómetros">
                     </div>
-                    <div class="p-8">
+                    
+                    <div class="p-8 relative">
+                        <div class="absolute top-0 right-0 -mt-8 mr-8 bg-gg-gold text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg transform translate-y-1/2 scale-0 group-hover:scale-100 transition-all duration-300">
+                            <i class="fa-solid fa-plus text-xl"></i>
+                        </div>
                         <h3 class="text-2xl font-bold text-gg-charcoal mb-3">Sonómetros Integradores</h3>
                         <p class="text-gray-600 mb-6">Equipos clase 1 y 2 para medición de ruido ambiental y laboral. Cumplimiento con normativa nacional.</p>
+                        
                         <ul class="text-sm text-gray-500 space-y-2">
                             <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Análisis de frecuencias</li>
                             <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Datalogger integrado</li>
@@ -66,17 +79,29 @@
                 </div>
 
                 <!-- Dosímetros -->
-                <div class="group bg-gg-light rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300" data-aos="fade-left">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Dosímetros">
-                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 hover:border-gg-gold/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer" 
+                     data-aos="fade-left"
+                     onclick="openModal(this)"
+                     data-title="Dosímetro Spartan 730"
+                     data-category="Higiene Ocupacional"
+                     data-image="img/imagen19.jpg"
+                     data-desc="El Dosímetro de ruido inalámbrico Spartan 730 está diseñado para hacer que la medición de la exposición al ruido sea simple y precisa. Elimina los cables del micrófono y permite la carga inalámbrica y comunicación Bluetooth de bajo consumo.">
+                    
+                    <div class="h-80 overflow-hidden relative bg-gray-50 p-8 flex items-center justify-center border-b border-gray-100">
+                        <span class="absolute top-6 left-6 bg-gg-gold text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-full z-10">Wireless</span>
+                        <img src="img/imagen19.jpg" class="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-lg" alt="Dosímetros">
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-gg-charcoal mb-3">Dosímetros de Ruido</h3>
-                        <p class="text-gray-600 mb-6">Dispositivos personales compactos para la medición de la dosis de ruido acumulada durante la jornada laboral.</p>
+                    
+                    <div class="p-8 relative">
+                        <div class="absolute top-0 right-0 -mt-8 mr-8 bg-gg-gold text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg transform translate-y-1/2 scale-0 group-hover:scale-100 transition-all duration-300">
+                            <i class="fa-solid fa-plus text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gg-charcoal mb-3">Dosímetro Spartan 730</h3>
+                        <p class="text-gray-600 mb-6">Tecnología inalámbrica de última generación para la medición de dosis de ruido personal.</p>
+                        
                         <ul class="text-sm text-gray-500 space-y-2">
-                            <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Diseño ergonómico</li>
-                            <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Software de gestión</li>
+                            <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Carga Inalámbrica</li>
+                            <li><i class="fa-solid fa-check text-gg-gold mr-2"></i>Control vía App Móvil</li>
                         </ul>
                     </div>
                 </div>
@@ -96,35 +121,159 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
                 <!-- Balones de Oxígeno -->
-                <div class="group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="group bg-[#363a3b] border border-white/5 rounded-3xl overflow-hidden hover:bg-[#3e4244] hover:-translate-y-2 transition-all duration-300 cursor-pointer shadow-2xl" 
+                     data-aos="fade-up" 
+                     data-aos-delay="100"
+                     onclick="openModal(this)"
+                     data-title="Balón de Oxígeno 10m³"
+                     data-category="Equipamiento Médico"
+                     data-image="img/imagen20.jpg"
+                     data-desc="Balón de Oxígeno - Cilindro de acero 10 m3. Fabricado bajo norma ISO 9809-1 TP250 bar. Incluye válvula logatipo, tapa tulipa y prueba hidrostática. Ideal para clínicas y soporte vital.">
                     <div class="flex flex-col md:flex-row h-full">
-                        <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006" class="absolute inset-0 w-full h-full object-cover" alt="Balones de Oxígeno">
+                        <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden bg-white/5 p-6 flex items-center justify-center">
+                            <span class="absolute top-4 left-4 bg-gg-gold text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-full z-10">ISO 9809-1</span>
+                            <img src="img/imagen20.jpg" class="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-500" alt="Balones de Oxígeno">
                         </div>
                         <div class="md:w-3/5 p-8 flex flex-col justify-center">
-                            <h3 class="text-2xl font-bold text-gg-gold mb-3">Balones de Oxígeno</h3>
-                            <p class="text-gray-400 text-sm mb-4">Cilindros de alta presión certificados para uso médico e industrial. Disponibles en diversas capacidades.</p>
-                            <span class="inline-block px-3 py-1 bg-gg-gold/20 text-gg-gold text-xs font-bold rounded-full w-fit">Stock Disponible</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">Balón de Oxígeno</h3>
+                            <p class="text-gg-gold font-bold text-sm mb-4">Cilindro de Acero 10m³</p>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Cilindro de alta presión con certificación internacional. Seguridad garantizada.</p>
+                            <span class="inline-flex items-center text-xs font-bold text-gg-gold uppercase tracking-widest group-hover:underline">Ver ficha técnica <i class="fa-solid fa-arrow-right ml-2"></i></span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Concentradores -->
-                <div class="group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:bg-white/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="group bg-[#363a3b] border border-white/5 rounded-3xl overflow-hidden hover:bg-[#3e4244] hover:-translate-y-2 transition-all duration-300 cursor-pointer shadow-2xl" 
+                     data-aos="fade-up" 
+                     data-aos-delay="200"
+                     onclick="openModal(this)"
+                     data-title="Concentrador Olive OLV-10"
+                     data-category="Equipamiento Médico"
+                     data-image="img/imagen21.jpg"
+                     data-desc="Concentrador Olive – OLV-10. Nuestro concentrador de oxígeno adopta una fuente de alimentación de CA de 220V y utiliza aire como materia prima y tamiz molecular de alta calidad como adsorbente. Flujo continuo de 0 a 10 Litros/min.">
                     <div class="flex flex-col md:flex-row h-full">
-                        <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2030" class="absolute inset-0 w-full h-full object-cover" alt="Concentradores">
+                        <div class="md:w-2/5 h-64 md:h-auto relative overflow-hidden bg-white/5 p-6 flex items-center justify-center">
+                            <span class="absolute top-4 left-4 bg-gg-gold text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest rounded-full z-10">Uso 24/7</span>
+                            <img src="img/imagen21.jpg" class="h-full w-auto object-contain group-hover:scale-110 transition-transform duration-500" alt="Concentradores">
                         </div>
                         <div class="md:w-3/5 p-8 flex flex-col justify-center">
-                            <h3 class="text-2xl font-bold text-gg-gold mb-3">Concentradores</h3>
-                            <p class="text-gray-400 text-sm mb-4">Equipos estacionarios y portátiles para suministro continuo de oxígeno. Operación silenciosa y eficiente.</p>
-                            <span class="inline-block px-3 py-1 bg-gg-gold/20 text-gg-gold text-xs font-bold rounded-full w-fit">Última Generación</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">Concentrador Olive</h3>
+                            <p class="text-gg-gold font-bold text-sm mb-4">Modelo OLV-10</p>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed">Suministro continuo de oxígeno de alta pureza. Operación silenciosa y eficiente.</p>
+                            <span class="inline-flex items-center text-xs font-bold text-gg-gold uppercase tracking-widest group-hover:underline">Ver ficha técnica <i class="fa-solid fa-arrow-right ml-2"></i></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- MODAL (Ventana Emergente) -->
+    <div id="productModal" class="fixed inset-0 z-[60] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <!-- Fondo oscuro con blur -->
+        <div class="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity opacity-0" id="modalBackdrop"></div>
+        
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+                <!-- Panel del Modal -->
+                <div class="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-4xl opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" id="modalPanel">
+                    
+                    <!-- Botón Cerrar -->
+                    <button type="button" onclick="closeModal()" class="absolute right-4 top-4 z-10 p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gg-charcoal transition-colors">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+
+                    <div class="flex flex-col md:flex-row">
+                        <!-- Sección Imagen -->
+                        <div class="md:w-1/2 bg-gray-50 p-8 flex items-center justify-center">
+                            <img id="modalImage" src="" alt="Detalle" class="max-h-[50vh] w-auto object-contain drop-shadow-xl">
+                        </div>
+                        
+                        <!-- Sección Contenido -->
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <span id="modalCategory" class="text-gg-gold font-bold tracking-widest uppercase text-xs mb-2 block">Categoria</span>
+                            <h3 id="modalTitle" class="text-3xl font-black text-gg-charcoal mb-6">Titulo</h3>
+                            <div class="w-16 h-1 bg-gg-gold rounded-full mb-6"></div>
+                            <p id="modalDescription" class="text-gray-600 leading-relaxed text-lg mb-8">
+                                Descripción detallada...
+                            </p>
+                            
+                            <div class="pt-6 border-t border-gray-100">
+                                <a href="https://wa.me/?text=Hola%20Global%20Group,%20estoy%20interesado%20en..." target="_blank" class="inline-flex items-center justify-center w-full px-6 py-4 bg-gg-gold text-white font-bold rounded-xl hover:bg-gg-charcoal transition-colors uppercase tracking-widest text-sm gap-2 shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i> Cotizar Ahora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT PARA EL MODAL -->
+    <script>
+        const modal = document.getElementById('productModal');
+        const modalBackdrop = document.getElementById('modalBackdrop');
+        const modalPanel = document.getElementById('modalPanel');
+
+        // Elementos de contenido
+        const mImg = document.getElementById('modalImage');
+        const mTitle = document.getElementById('modalTitle');
+        const mDesc = document.getElementById('modalDescription');
+        const mCat = document.getElementById('modalCategory');
+
+        function openModal(element) {
+            // 1. Obtener datos del elemento clicado
+            const title = element.getAttribute('data-title');
+            const desc = element.getAttribute('data-desc');
+            const img = element.getAttribute('data-image');
+            const cat = element.getAttribute('data-category');
+
+            // 2. Llenar el modal
+            mTitle.textContent = title;
+            mDesc.textContent = desc;
+            mImg.src = img;
+            mCat.textContent = cat;
+
+            // 3. Mostrar modal (quitar hidden)
+            modal.classList.remove('hidden');
+
+            // 4. Animar entrada (pequeño delay para permitir que el navegador renderice el 'block')
+            setTimeout(() => {
+                modalBackdrop.classList.remove('opacity-0');
+                modalPanel.classList.remove('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
+                // Clases finales de animación
+                modalPanel.classList.add('opacity-100', 'translate-y-0', 'sm:scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            // 1. Animar salida
+            modalBackdrop.classList.add('opacity-0');
+            modalPanel.classList.remove('opacity-100', 'translate-y-0', 'sm:scale-100');
+            modalPanel.classList.add('opacity-0', 'translate-y-4', 'sm:translate-y-0', 'sm:scale-95');
+
+            // 2. Esperar a que termine la transición para ocultar (300ms suele ser el default de Tailwind transition)
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Cerrar si se hace click fuera del panel
+        modal.addEventListener('click', (e) => {
+            if (e.target === modalBackdrop || e.target.closest('#modalBackdrop')) {
+                closeModal();
+            }
+        });
+
+        // Cerrar con tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
 
     <footer id="footer"></footer>
 
